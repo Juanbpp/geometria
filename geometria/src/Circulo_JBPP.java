@@ -6,6 +6,9 @@ public class Circulo_JBPP extends FiguraGeometrica_JBPP {
 	
 	public Circulo_JBPP(double r, String tipoFigura) {
 		super(tipoFigura);
+		if (r<0) {
+			r=r*-1;//convierte en positivo
+		}
 		radio = r;
 	}
 
